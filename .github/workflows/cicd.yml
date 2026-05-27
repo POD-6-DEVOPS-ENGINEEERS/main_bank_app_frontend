@@ -18,7 +18,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        repository: POD-6-DEVOPS-ENGINEERS/main_bank_app_frontend
+        repository: POD-6-DEVOPS-ENGINEEERS/main_bank_app_frontend
         ref: main
 
 
