@@ -73,7 +73,7 @@ jobs:
          cat ./bank-project/frontend.yaml 
          git add .
          git commit -m "Update frontend image to version ${{ github.run_number }}" || echo "No changes"
-         git push origin features/mikky
+         git push origin main
 
 
         #  sed -i "s+${{ vars.ECR_REPO }}/bank-frontend:.*+${{ vars.ECR_REPO }}/bank-frontend:${{ github.run_number }}+g" ./bank-project/frontend.yaml
