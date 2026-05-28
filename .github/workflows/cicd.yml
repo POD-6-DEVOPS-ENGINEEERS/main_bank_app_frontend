@@ -73,6 +73,8 @@ jobs:
          cat ./bank-project/frontend.yaml 
          git add .
          git commit -m "Update frontend image to version ${{ github.run_number }}" || echo "No changes"
+         permissions:
+           contents: write
          git push origin main
 
 
