@@ -63,7 +63,7 @@ jobs:
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
       run: |
-         git clone "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/POD-6-DEVOPS-ENGINEEERS/kubernetes-manifest.git"
+         git clone "https://mikky-13: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@github.com/POD-6-DEVOPS-ENGINEEERS/kubernetes-manifest.git"
          
          cd kubernetes-manifest
          git config --global user.email "michealkelechi1305@gmail.com"
