@@ -69,10 +69,9 @@ jobs:
          git config --global user.name "mikky"
 
          sed -i "s|${{ vars.ECR_REPO }}/bank-frontend:.*|${{ vars.ECR_REPO }}/bank-frontend:${{ github.run_number }}|g" ./bank-project/frontend.yaml
-
-         cat ./bank-project/frontend.yaml | grep -q "${{ vars.ECR_REPO }}/bank-frontend:${{ github.run_number }}"
-
-         git add bank-project/frontend.yaml
+         echo "AFTER SED"
+         cat ./bank-project/frontend.yaml 
+         git add .
          git commit -m "Update frontend image to version ${{ github.run_number }}" || echo "No changes"
          git push origin features/mikky
 
